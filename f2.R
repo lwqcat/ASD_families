@@ -1,7 +1,7 @@
 setwd('*/ASD_families/analysis/f2')
 rm(list=ls())
 
-p1<-ggboxplot(BC_data, x="Relationship", y="Bray.Curtis.dissimilarity", color = "Relationship",palette = c("#3288BD",'#DD8E08',"#CC6666","#53868B","#5E4FA2", "#F46D43","gold2","#FEE08B","palegreen4", "steelblue3","#5E4FA2"),size = 1.5,width = 0.6)+#theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))+
+p1<-ggboxplot(BC_data, x="Relationship", y="Bray.Curtis.dissimilarity", color = "Relationship",palette = c("#3288BD",'#DD8E08',"#CC6666","#53868B","#5E4FA2", "#F46D43","gold2","#FEE08B","palegreen4", "steelblue3","#5E4FA2"),size = 1.5,width = 0.6)+
   stat_compare_means(comparisons = my_comparisons,size=4,bracket.size = 0.75,label.y = c(),
                      label = "p.format",
                      method="wilcox.test")+ 
