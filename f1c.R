@@ -1,4 +1,5 @@
-setwd("") 
+setwd('*/ASD_families/analysis/f1c')
+rm(list=ls())
 
 library("ggplot2")
 
